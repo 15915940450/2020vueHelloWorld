@@ -114,5 +114,19 @@ module.exports={
         prependData:'@import "~@/veri.scss";'
       }
     }
+  },
+  /*configureWebpack:{
+    resolve:{
+      alias:{
+        'element-ui':path.join(__dirname,'src/eui')
+      }
+    }
+  },*/
+  pwa:{
+    workboxOptions:{
+      exclude:[
+        'index.html'
+      ]
+    }
   }
 };
